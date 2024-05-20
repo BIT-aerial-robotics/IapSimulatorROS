@@ -8,8 +8,8 @@
 
 ## Test Input Nodes
 
-- **test_***: These nodes are used for inputting test trajectories for various configurations.
-- **test_*_replay**: This node is for replaying trajectories using the ROS bags.
+- **test_***: These nodes input test trajectories for various configurations.
+- **test_*_replay**: These nodes are for replaying trajectories using the ROS bags.
 - **joystick_input**: This node allows trajectory input using a game controller.
 
 ## Position Forwarding Node
