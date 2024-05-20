@@ -15,3 +15,9 @@
 ## Position Forwarding Node
 
 - **vins_position_forward**: This node forwards the online VINS position estimates.
+
+
+## Dependencies
+
+- **ZeroMQ**: An open-source communication framework. Please follow the instructions on its official website for installation.
+- **RaiSim**: A robotics simulation engine. It requires filling out an application on its official website and using it with a license.
