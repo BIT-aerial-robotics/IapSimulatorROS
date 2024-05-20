@@ -1,0 +1,11 @@
+<launch>
+    <node name="star3combined" pkg = "iap3spherical" type = "star3combined" output = "screen">
+        <param name = "urdfPath" type = "str" value = "\\home\\siris\\catkin_ws\\src\\raisim_iap_3spherical\\rsc\\ava\\urdf\\star3combined.urdf" />
+        <param name = "robotName" type = "str" value = "" />
+        <param name = "localHostIp" type = "str" value = "172.19.221.5" />
+        <param name = "unrealIp" type = "str" value = "172.19.208.1" />
+        <param name = "dataPort" type = "str" value = "7050" />
+        <param name = "raisimServerPort" type = "int" value = "8080" />
+        <param name = "rosbagPath" type = "str" value = "/home/siris/catkin_ws/rosbags/star_combined_motion-20240131.bag" />
+    </node>
+</launch>

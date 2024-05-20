@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="AVA3_platform_1031_2">
+  <!-- <link name="world"/> -->
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1.1" />
+      <inertia
+        ixx="0.053173"
+        ixy="0"
+        ixz="0"
+        iyy="0.053173"
+        iyz="0"
+        izz="0.10386" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.509803921568627 0.666666666666667 0.83921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <!-- <material name="">
+        <contact name="ice"/>
+      </material> -->
+    </collision>
+  </link>
+  <!-- <joint name="worldToBase" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 2"/>
+  </joint> -->
+
+  <link
+    name="Uav1_Link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0"
+        rpy="0 0 0" />
+      <mass
+        value="2.0" />
+      <inertia
+        ixx="0.02"
+        ixy="5.9869E-07"
+        ixz="-1.1284E-05"
+        iyy="0.02"
+        iyz="2.5228E-07"
+        izz="0.045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <!-- <material name="">
+        <contact name="ice"/>
+      </material> -->
+    </collision>
+  </link>
+  <joint
+    name="Uav1_joint"
+    type="spherical">
+    <origin
+      xyz="0.5525 0.0 0.132"
+      rpy="0.0084831 0.0079859 -0.0081306" />
+    <parent
+      link="base_link" />
+    <child
+      link="Uav1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="Uav2_Link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0"
+        rpy="0 0 0" />
+      <mass
+        value="2.0" />
+      <inertia
+        ixx="0.02"
+        ixy="5.5923E-07"
+        ixz="-3.9545E-05"
+        iyy="0.02"
+        iyz="-3.4617E-09"
+        izz="0.045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <!-- <material name="">
+        <contact name="ice"/>
+      </material> -->
+    </collision>
+  </link>
+  <joint
+    name="Uav2_joint"
+    type="spherical">
+    <origin
+      xyz="-0.27625 -0.47847903559 0.132"
+      rpy="0.0052954 0.035014 -2.1086" />
+    <parent
+      link="base_link" />
+    <child
+      link="Uav2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="Uav3_Link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0"
+        rpy="0 0 0" />
+      <mass
+        value="2.0" />
+      <inertia
+        ixx="0.02"
+        ixy="1.1286E-07"
+        ixz="-1.575E-05"
+        iyy="0.02"
+        iyz="3.111E-06"
+        izz="0.045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <!-- <material name="">
+        <contact name="ice"/>
+      </material> -->
+    </collision>
+  </link>
+  <joint
+    name="Uav3_joint"
+    type="spherical">
+    <origin
+      xyz="-0.27625 0.47847903559 0.132"
+      rpy="-0.0047498 0.001035 2.1347" />
+    <parent
+      link="base_link" />
+    <child
+      link="Uav3_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

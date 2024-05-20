@@ -1,0 +1,11 @@
+<launch>
+    <node name="square3single" pkg = "iap3spherical" type = "square3single" output = "screen">
+        <param name = "urdfPath" type = "str" value = "\\home\\siris\\catkin_ws\\src\\raisim_iap_3spherical\\rsc\\ava\\urdf\\square3.urdf" />
+        <param name = "robotName" type = "str" value = "" />
+        <param name = "localHostIp" type = "str" value = "172.19.221.5" />
+        <param name = "unrealIp" type = "str" value = "172.19.208.1" />
+        <param name = "dataPort" type = "str" value = "7050" />
+        <param name = "raisimServerPort" type = "int" value = "8080" />
+        <param name = "rosbagPath" type = "str" value = "/home/siris/catkin_ws/rosbags/square_motion-20240227.bag" />
+    </node>
+</launch>

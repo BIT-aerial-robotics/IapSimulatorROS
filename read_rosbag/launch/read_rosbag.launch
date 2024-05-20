@@ -1,0 +1,9 @@
+<launch>
+    <node name="read_rosbag" pkg = "read_rosbag" type = "read_rosbag" output = "screen">
+        <param name = "sourceBagPath" type = "str" value = "/home/siris/catkin_ws/rosbags/slam_2023-10-26-10-22-54.bag" />
+        <param name = "targetBagPath" type = "str" value = "/home/siris/catkin_ws/rosbags/slam2023102601.bag" />
+        <param name = "imuTopic" type = "str" value = "/imu_1" />
+        <param name = "imageTopic1" type = "str" value = "/camera1/camera1/image" />
+        <param name = "imageTopic2" type = "str" value = "/camera2/camera2/image" />
+    </node>
+</launch>
